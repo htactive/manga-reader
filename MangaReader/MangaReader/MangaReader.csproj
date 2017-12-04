@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -174,9 +176,15 @@
     <Content Include="Content\assets\animate.css" />
     <Content Include="Content\assets\flexslider.css" />
     <Content Include="Content\assets\font-awesome.min.css" />
-    <Content Include="Content\assets\fonts\flexslider-icon.svg" />
-    <Content Include="Content\assets\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\assets\fonts\flexslider-icon.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\assets\js\jquery.flexslider.js" />
     <Content Include="Content\assets\theme.css" />
     <Content Include="Content\bootstrap.css" />
@@ -187,17 +195,40 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\assets\fonts\flexslider-icon.eot" />
-    <Content Include="Content\assets\fonts\flexslider-icon.ttf" />
-    <Content Include="Content\assets\fonts\flexslider-icon.woff" />
-    <Content Include="Content\assets\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\assets\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\assets\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\assets\fonts\FontAwesome.otf" />
-    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\assets\fonts\Oswald-Regular-400.woff" />
+    <Content Include="Content\assets\fonts\flexslider-icon.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\flexslider-icon.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\flexslider-icon.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\assets\fonts\Oswald-Regular-400.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Publish.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
